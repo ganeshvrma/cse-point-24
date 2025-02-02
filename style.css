@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cabin", sans-serif;
+}
+:root {
+  --semi-cl: rgba(243, 116, 33, 1);
+  --base-cl: rgba(0, 85, 164, 1);
+  --heading2-cl: ;
+}
+p {
+  font-size: 1rem;
+}
+.section-button {
+  padding: 15px 45px;
+  border: 1px solid var(--semi-cl);
+  background-color: transparent;
+  color: var(--semi-cl);
+}
+.section-button:hover {
+  background-color: var(--semi-cl);
+  color: white;
+}
+header {
+  width: 100%;
+  background-image: url("images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header .wrapper {
+  width: 80%;
+  margin: auto;
+}
+.upper-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+}
+.logo {
+  align-self: center;
+}
+.upper-head .logo a {
+  text-decoration: none;
+}
+.upper-head .logo a p {
+  font-size: 35px;
+  font-weight: 900;
+  color: rgba(0, 85, 164, 1);
+}
+.login .btn-signin {
+  text-align: center;
+  padding: 12px 30px;
+  background-color: rgba(0, 85, 164, 1);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login .btn-signup {
+  text-align: center;
+  padding: 12px 30px;
+  background: transparent;
+  color: var(--par-cl);
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login .btn-signup:hover {
+  background-color: rgba(0, 85, 164, 1);
+  color: white;
+}
+#nava
+{
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 251, 253);
+  height: 55px;
+  padding: 0 30px;
+  border-radius: 7px;
+}
+nav ul {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 750;
+  color: rgba(0, 85, 164, 1);
+  align-items: center;
+  cursor: pointer;
+}
+nav .links {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+}
+nav .links i {
+  color: var(--base-cl);
+  margin-left: 20px;
+  width: 15px;
+  padding: 18px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+/*------------------banner-----------*/
+.banner {
+  width: 100%;
+}
+.banner .content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+}
+.banner .content h2 {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.582);
+}
+.banner .content h1 {
+  color: var(--base-cl);
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.banner button {
+  padding: 15px 40px;
+  border-radius: 0;
+  font-weight: 700;
+}
+.banner button:hover {
+  background-color: rgba(0, 85, 164, 1);
+  border-radius: 0;
+}
+/* .banner button:hover {
+} */
+
+/*------------------------section-1-----------------------------*/
+.section-1 {
+  padding-bottom: 40px;
+}
+.section-1 h2 {
+  padding: 40px;
+  margin-left: 8%;
+  font-size: 25px;
+  text-align: center;
+  color: var(--base-cl);
+}
+.section-1 .wrapper {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+.section-1 .card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+.section-1 a {
+  text-decoration: none;
+}
+.section-1 .card:hover {
+  border: 2px solid rgba(0, 85, 164, 0.658);
+}
+.section-1 p {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(243, 116, 33, 1);
+}
+.section-1 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 85, 164, 1);
+  padding: 5px;
+}
+
+/*--------------section-2----------------*/
+.section-2 {
+  background-image: url("images/secction2-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .image {
+  width: 50%;
+}
+.section-2 img {
+  width: 100%;
+  padding: 50px;
+  transform: flip;
+}
+.section-2 img:hover {
+  transform: rotateY(360deg);
+  transition: 3s;
+}
+.section-2 .text {
+  width: 40%;
+  padding: 40px;
+}
+.section-2 .text p {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 55px;
+  padding: 10px 0;
+}
+
+/*-------------------section-3-------------------------*/
+.section-3 {
+  text-align: center;
+}
+.section-3 .section3-heading {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.034);
+}
+.section-3 h2 {
+  font-size: 25px;
+  padding: 30px;
+}
+
+.section-3 .key-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  gap: 7%;
+}
+.section-3 .key-points .sub {
+  width: 15%;
+  padding: 20px;
+}
+.section-3 .key-points p {
+  font-size: 20px;
+  padding: 10px;
+}
+/*-------------------section-4-----------------------*/
+.section-4 {
+  background-image: url("images/secction2-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-4 .image {
+  width: 50%;
+}
+.section-4 img {
+  width: 100%;
+  padding: 50px;
+}
+
+.section-4 .text {
+  width: 40%;
+  padding: 40px;
+}
+.section-4 .text .h2 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.section-4 .text .h6 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 0;
+}
+/*---------------------section-5---------------------*/
+.section-5 {
+  height: 350px;
+  text-align: center;
+}
+.section-5 .content {
+  width: 25%;
+  margin: auto;
+  padding-top: 40px;
+}
+.section-5 img {
+  width: 100%;
+}
+
+.section-5 img {
+  margin-top: -5%;
+}
+/*----------------------FOOTER-----------------------------*/
+footer {
+  background-color: rgba(0, 85, 164, 1);
+  color: white;
+}
+footer .wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo a p {
+  font-size: 35px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+footer ul a {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer ul li:hover {
+  text-decoration: underline;
+}
+footer .links i {
+  padding: 10px 20px;
+  float: right;
+  width: 20px;
+}
+footer .copyright {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: rgba(109, 146, 181, 1);
+  border-top: 1px solid rgba(109, 146, 181, 0.329);
+}
