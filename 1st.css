@@ -1,12 +1,11 @@
-* {
+/* * {
   padding: 0%;
   margin: 0%;
   text-align: center;
   scroll-behavior: smooth;
 }
 .navbar {
-  /* background-color:#0f1111; */
-  /* background-color: #e0e1dd; */
+  
   background-color: rgb(250, 251, 253);
   overflow: hidden;
   position: sticky;
@@ -19,10 +18,9 @@
 }
 .navbar a {
   font-size: 20px;
-  /* color: brown; */
+ 
   color: rgba(0, 85, 164, 1);
-  font-family: cursive;
-  /* margin-right: 80px; */
+  
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -34,7 +32,6 @@
 }
 #LOGO {
   font-size: 25px;
-  /* margin-left: 5px; */
 }
 body {
     background-color: #f8f7ff;
@@ -61,62 +58,183 @@ button {
   margin: 100px 30px;
   border: 1px solid black;
   border-radius: 10%;
-  /* background-color: #ffd8be; */
   background-color:#bde0fe;
 }
 button:hover {
-  /* background-color: #ffeedd; */
   background-color:#a2d2ff;
   color: rgb(40, 40, 122);
-  
-  /* width: 450px;
-  height: 450px; */
   font-size: 65px;
   border: 1px solid black;
   border-radius: 10%;
-  /* transform: scale(1.1); */
   transition: 0.5s;
   opacity: 1;
+} */
+/* Reset and Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 
-  /* transition: all 0.5s ease-in 0.5s; */
+/* Navbar */
+.navbar {
+  background-color: rgb(250, 251, 253);
+  overflow: hidden;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  top: 0;
+  align-items: center;
+  padding: 0 20px;
 }
-/* @media (width: 100%) and (min-width: 100px) {
-  button {
-    width: 400px;
-    height: 400px;
+
+.navbar a {
+  font-size: 18px;
+  color: rgba(0, 85, 164, 1);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #ffeedd;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Logo */
+#LOGO {
+  font-size: 25px;
+}
+
+/* Body */
+body {
+  background-color: #f8f7ff;
+  width: 100%;
+  background-image: url("images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+  margin-top: 70px;
+  background-color: rgb(250, 251, 253);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Button */
+button {
+  height: 300px;
+  width: 400px;
+  font-size: 50px;
+  margin: 100px 30px;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: #bde0fe;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #a2d2ff;
+  color: rgb(40, 40, 122);
+  font-size: 65px;
+  border-radius: 10%;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
   }
-} */
-/* div {
-  height: 100px;
-  width: 150px;
-  text-align: center;
-  display: inline-block;
-  padding-top: 30px;
-  margin-top: 10px;
-  text-align: center;
-  position: relative;
-  border: 2px solid black;
-  border-radius: 20px;
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  button {
+    width: 300px;
+    height: 200px;
+    font-size: 40px;
+    margin: 50px 20px;
+  }
+
+  button:hover {
+    font-size: 50px;
+  }
 }
-#box1 {
-  background-color: aquamarine;
-  cursor: pointer;
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #LOGO {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  button {
+    width: 250px;
+    height: 150px;
+    font-size: 30px;
+    margin: 30px 10px;
+  }
+
+  button:hover {
+    font-size: 40px;
+  }
 }
-#box2 {
-  background-color: bisque;
-  top: 55px;
-  left: -15px;
-  cursor: pointer;
+
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #LOGO {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 200px;
+    height: 120px;
+    font-size: 25px;
+    margin: 20px 5px;
+  }
+
+  button:hover {
+    font-size: 30px;
+  }
 }
-#box3 {
-  background-color: orange;
-  top: 120px;
-  left: -30px;
-  cursor: pointer;
-}
-#box4 {
-  background-color: khaki;
-  top: 200px;
-  left: -50px;
-  cursor: pointer;
-} */
