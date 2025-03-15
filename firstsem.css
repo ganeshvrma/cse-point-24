@@ -6,7 +6,41 @@
 html {
   scroll-behavior: smooth;
 }
-.navbar {
+.navbg{
+  background-color: rgb(250, 251, 253);
+}
+.alinnav{
+  justify-content: end;
+}
+.fntnav{
+  font-size: 1.5rem !important;
+}
+.nav-item{
+  padding-right: 25px;
+}
+@media(max-width:992px){
+  .dropbtn{
+      font-size: 0.9rem;
+      width: 50vw;
+  }
+  .fntnav{
+      font-size: 1rem !important;
+  }
+  .brandname{
+      position: relative;
+  }
+  .alinnav{
+      position: absolute;
+      background-color: #a2d2ff;
+      z-index: 454564;
+      left: 3px;
+      top: 70px;
+      padding: 16px;
+      overflow: hidden;
+      width: 100vw;
+  }
+}
+/* .navbar {
   background-color: rgb(250, 251, 253);
   overflow: hidden;
   position: sticky;
@@ -22,7 +56,6 @@ html {
 
 .navbar a {
   font-size: 20px;
-
   color: rgba(0, 85, 164, 1);
   text-align: center;
   font-family: cursive;
@@ -33,7 +66,7 @@ html {
   background-color: #ffeedd;
   color: black;
   border-radius: 10px;
-}
+} */
 body {
     background-color: #f8f7ff;
     width: 100%;
