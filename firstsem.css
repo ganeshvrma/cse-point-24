@@ -6,9 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
-.navbg{
+/* .navbg{
   background-color: rgb(250, 251, 253);
-}
+} */
 .alinnav{
   justify-content: end;
 }
@@ -76,9 +76,12 @@ body {
     background-position: center;
     height: 100vh;
 }
+li{
+  list-style: none;
+}
 h1 {
   font-family: cursive;
-  background-color: rgb(250, 251, 253);
+  /* background-color: rgb(250, 251, 253); */
 }
 a {
   text-decoration: none;
