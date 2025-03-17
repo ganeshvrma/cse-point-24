@@ -75,6 +75,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 li{
   list-style: none;
@@ -83,6 +84,10 @@ h1 {
   font-family: cursive;
   /* background-color: rgb(250, 251, 253); */
 }
+.brandname{
+  font-size: 30px!important;
+}
+
 a {
   text-decoration: none;
   font-size: 29px;

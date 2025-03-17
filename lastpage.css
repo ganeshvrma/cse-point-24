@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: url("IMAGE/bg.svg");
+}
+/* navbar css */
+
+.alinnav{
+    justify-content: end;
+}
+.fntnav{
+    font-size: 1.5rem !important;
+}
+.nav-item{
+    padding-right: 25px;
+}
+/* navbar css */
+.topheading{
+    padding-top: 3rem;
+    text-align: center;
+}
+.brandname{
+    font-size: 30px!important;
+}
+
+/* dropdown part */
+#position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+/* Style The Dropdown Button */
+.dropbtn {
+    margin-top: 20px;
+    background-color:#bde0fe;
+    color: rgba(0, 85, 164, 1);
+    padding: 16px;
+    font-size: 1.5rem;
+    width: 25vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #e9edc9;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #a2d2ff;
+    opacity: 900;
+  }
+  main {
+    margin: 50px 0 100px 0;
+    
+  }
+  .mainpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+  li{
+    list-style: none;
+  }
+  @media(max-width:992px){
+    .dropbtn{
+        font-size: 0.9rem;
+        width: 50vw;
+    }
+    .fntnav{
+        font-size: 1rem !important;
+    }
+    .brandname{
+        position: relative;
+    }
+    .alinnav{
+        position: absolute;
+        background-color: #a2d2ff;
+        z-index: 454564;
+        left: 3px;
+        top: 70px;
+        padding: 16px;
+        overflow: hidden;
+        width: 100vw;
+    }
+  }
