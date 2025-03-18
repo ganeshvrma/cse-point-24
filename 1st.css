@@ -1,13 +1,15 @@
 
 /* Reset and Global Styles */
 * {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
-/* .alinnav{
+html, body {
+  width: 100%;
+  height: 100%;
+}
+.alinnav{
   justify-content: end;
 }
 .fntnav{
@@ -15,9 +17,9 @@
 }
 .nav-item{
   padding-right: 25px;
-} */
+}
 
-.navbar {
+/* .navbar {
   background-color: rgb(250, 251, 253);
   overflow: hidden;
   position: sticky;
@@ -43,7 +45,7 @@
   background-color: #ffeedd;
   color: black;
   border-radius: 10px;
-}
+} */
 
 /* Logo */
 #LOGO {
