@@ -75,7 +75,7 @@ a {
 }
 
 /* Button */
-button {
+midanchor {
   height: 300px;
   width: 400px;
   font-size: 50px;
@@ -86,7 +86,7 @@ button {
   transition: 0.5s ease-in-out;
 }
 
-button:hover {
+midanchor:hover {
   background-color: #a2d2ff;
   color: rgb(40, 40, 122);
   font-size: 65px;
