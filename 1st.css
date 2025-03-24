@@ -1,6 +1,6 @@
 
 /* Reset and Global Styles */
-* {
+/* * {
   padding: 0px;
   margin: 0px; 
   box-sizing: border-box;
@@ -17,7 +17,7 @@ html, body {
 }
 .nav-item{
   padding-right: 25px;
-}
+} */
 
 /* .navbar {
   background-color: rgb(250, 251, 253);
@@ -48,11 +48,11 @@ html, body {
 } */
 
 /* Logo */
-#LOGO {
+/* #LOGO {
   font-size: 25px;
 }
 
-/* Body */
+
 body {
   background-color: #f8f7ff;
   width: 100%;
@@ -61,21 +61,17 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-}
+} */
 
 /* Headings */
-h1 {
-  margin-top: 70px;
-  background-color: rgb(250, 251, 253);
-}
 
 /* Links */
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 /* Button */
-midanchor {
+/* button {
   height: 300px;
   width: 400px;
   font-size: 50px;
@@ -84,19 +80,19 @@ midanchor {
   border-radius: 10%;
   background-color: #bde0fe;
   transition: 0.5s ease-in-out;
-}
+} */
 
-midanchor:hover {
+/* button:hover {
   background-color: #a2d2ff;
   color: rgb(40, 40, 122);
   font-size: 65px;
   border-radius: 10%;
   transition: 0.5s;
   opacity: 1;
-}
+} */
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .navbar {
     position: flex;
     flex-direction: column;
@@ -177,5 +173,87 @@ midanchor:hover {
 
   button:hover {
     font-size: 30px;
+  }
+} */
+/* Reset and Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f7ff;
+}
+body{
+  background-image: url("images/bg.svg");
+}
+
+/* Navbar Styling */
+.navbg {
+  background-color: #e3f2fd;
+}
+.alinnav {
+  justify-content: end;
+}
+.fntnav {
+  font-size: 1.2rem !important;
+  color: #0055a4 !important;
+  transition: 0.3s;
+}
+.fntnav:hover {
+  color: #003366 !important;
+  text-decoration: underline;
+}
+
+/* Page Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Semester Selection Styling */
+.semester-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+.semester-card {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #0055a4, #008cba);
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+.semester-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #003366, #006994);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .semester-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+  .semester-card {
+      width: 300px;
+      height: 150px;
+      font-size: 1.5rem;
   }
 }
