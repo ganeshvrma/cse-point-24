@@ -3,7 +3,8 @@
   padding: 0;
 }
 body {
-  font-family: "Cabin", sans-serif;
+  /* font-family: "Cabin", sans-serif; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 :root {
   --semi-cl: rgba(243, 116, 33, 1);
@@ -311,8 +312,8 @@ nav ul li:hover {
 }
 /*----------------------FOOTER-----------------------------*/
 footer {
-  background-color: rgba(0, 85, 164, 1);
-  color: white;
+  background-color: #bde0fe;
+  color: black;
 }
 footer .wrapper {
   width: 80%;
@@ -327,7 +328,7 @@ footer .wrapper {
 .logo a p {
   font-size: 35px;
   font-weight: 900;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 footer ul a {
   display: inline-block;
