@@ -216,7 +216,7 @@ h1 {
 }
 
 /* Semester Selection Styling */
-.semester-container {
+/* .semester-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,6 +243,43 @@ h1 {
   transform: translateY(-10px);
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to right, #003366, #006994);
+} */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.semester-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.semester-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  min-width: 200px;
+}
+
+.semester-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Design */
