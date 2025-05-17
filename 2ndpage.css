@@ -20,20 +20,30 @@
       100% { background-position: 0% 50%; }
     }
     .navbg {
-      background-color: #e3f2fd;
+      /* background-color: #e3f2fd; */
+      /* background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
      
+      animation: gradientBG 10s ease infinite; */
     }
     .alinnav {
       justify-content: end;
     }
     .fntnav {
       font-size: 1.2rem !important;
-      color: #0055a4 !important;
+      /* color: #0055a4 !important; */
+      color: white !important;
       transition: 0.3s;
     }
     .fntnav:hover {
-      color: #003366 !important;
-      text-decoration: underline;
+      /* color: #003366 !important; */
+      color: rgb(134, 122, 57) !important;
+      text-decoration: none;
+    }
+    .brandname{
+      color: white !important;
+    }
+    .brandname:hover{
+      color: antiquewhite;
     }
     /* nav {
       background: rgba(255, 255, 255, 0.95);
